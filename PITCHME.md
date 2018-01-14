@@ -1,7 +1,9 @@
 @title[Introduction]
 
-<span class="byline">Reversing para newbies</span>
+Reversing para newbies
+<br>
 ![](logo.png)
-<span class="byline">con Radare2</span>
+<br>
+con Radare2
 
 ---
