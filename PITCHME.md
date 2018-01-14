@@ -72,6 +72,33 @@ Pero cómo?
 
 @title[processor example]
 
-### <span class="gold">Procesador</span>
+### <span class="gold">Ejemplo sencillo</span>
+
+Imaginemos un programa que pasándole un valor te devuelve el resultado de la suma con 16.
 
 ![CPU](src/cpu.flv)
+
+---
+
+@title[processor example]
+
+### <span class="gold">Registros</span>
+
+| Intel 16 | Intel x32 | Intel x64 | Descripción |
+|---|---|---|---|
+|AX|EAX|RAX|Registro de propósito general|
+|BX|EBX|RBX|Registro de propósito general|
+|CX|ECX|RCX|Registro de propósito general|
+|DX|EDX|RDX|Registro de propósito general|
+|SP|ESP|RSP|Stack Pointer|
+|BP|EBP|RBP|Stack Base Pointer
+|IP|EIP|RIP|Instruction Pointer|
+
+```
+0x1122334455667788
+  ================ rax (64bits)
+          ======== eax (32bits)
+              ==== ax  (16bits)
+              ==   ah  (8bits)
+                == al  (8bits)
+```
