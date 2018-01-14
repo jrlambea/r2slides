@@ -76,13 +76,11 @@ Pero cómo?
 
 Imaginemos un programa que pasándole un valor te devuelve el resultado de la suma con 16.
 
-![CPU](src/cpu.flv)
+![CPU](src/CPU.flv)
 
 ---
 
-@title[processor example]
-
-### <span class="gold">Registros</span>
+@title[Registers]
 
 |Intel16|Intelx32|Intelx64|Descripción|
 |---|---|---|---|
@@ -94,6 +92,14 @@ Imaginemos un programa que pasándole un valor te devuelve el resultado de la su
 |BP|EBP|RBP|Base Pointer
 |IP|EIP|RIP|Instruction Pointer|
 
+
+---
+
+@title[Registers Example]
+
+### Registros
+Ejemplo de nomenclaturas y relación con longitud.
+
 ```
 0x1122334455667788
   ================ rax (64bits)
@@ -101,4 +107,20 @@ Imaginemos un programa que pasándole un valor te devuelve el resultado de la su
               ==== ax  (16bits)
               ==   ah  (8bits)
                 == al  (8bits)
+```
+
+---
+
+@title[ASM]
+
+### Assembler
+ASM (o ensamblador) es el lenguaje para humanos de más bajo nivel que pude ser usado en una computadora moderna.
+
+En él se describen las instrucciones tal cual las ejecuta secuencialmente el CU.
+
+```asm
+mov rax, 0x0f
+mov rbx, 0x10
+add rax, rbx
+push rax
 ```
