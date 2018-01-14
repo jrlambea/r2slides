@@ -2,7 +2,7 @@
 
 Reversing para newbies
 <br>
-![](logo.png)
+![](src/logo.png)
 <br>
 con Radare2
 
@@ -54,7 +54,7 @@ La RE se basa en el aprendizaje de funcionamiento de un mecanismo sin informaci�
 
 El procesador se encarga de procesar los datos residentes en los diferentes tipos de soportes de memoria.
 
-![](cpu.gif)
+![](src/cpu.gif)
 
 Pero cómo?
 
@@ -66,4 +66,12 @@ Pero cómo?
 
 * Unidad de control: Ejecuta el flujo del código.
 * Unidad aritmetico-lógica: Realiza operaciones matemáticas (sumas, restas, xor...), cada procesador puede tener diferentes implementaciones para estas funciones.
-* Registros: Elementos de almacenamiento, a la capacidad máxima de estos se les llama `word` definen los bits del procesador (8, 16, 32, 64), consecuentemente también el límite de direccionamiento.
+* Registros: Elementos de almacenamiento. A la capacidad máxima de estos se les llama `word` definen los bits del procesador (8, 16, 32, 64), consecuentemente también el límite de direccionamiento.
+
+---
+
+@title[processor example]
+
+### <span class="gold">Procesador</span>
+
+![CPU](src/cpu.flv)
