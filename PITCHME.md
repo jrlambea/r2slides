@@ -76,7 +76,7 @@ Pero cómo?
 
 Imaginemos un programa que pasándole un valor te devuelve el resultado de la suma con 16.
 
-![CPU](src/CPU.flv)
+![CPU](src/cpu.flv)
 
 ---
 
@@ -118,9 +118,51 @@ ASM (o ensamblador) es el lenguaje para humanos de más bajo nivel que pude ser 
 
 En él se describen las instrucciones tal cual las ejecuta secuencialmente el CU.
 
-```asm
-mov rax, 0x0f
-mov rbx, 0x10
-add rax, rbx
-push rax
+```x86asm
+mov eax, 0x0f
+mov ebx, 0x10
+add eax, ebx
+push eax
 ```
+
+---
+
+@title[OPCodes]
+
+### Operational Code
+
+Cada instrucción en ASM se traduce a un valor en el lenguaje de la CU, cada valor es un código operacional. Por ejemplo:
+* 0xeb == JMP
+* 0x0f84 == JE
+* ...
+
+![](src/instructionset.png)
+
+---
+
+@title[Binarios ejecutables]
+
+### Binarios ejecutables
+
+Existen diferentes tipos de compilados, generalmente ELF (Linux) y PE (Windows).
+
+Ambos tienen al menos los siguientes bloques:
+* `.data`: Datos que utiliza el ejecutable, strings, arrays, etc.
+* `.text`: Código ejecutable (opcodes).
+
+Cuando se ejecutan, se copian en memoria y empiezan en la primera instrucción del bloque `.text` (entry point).
+
+---
+
+@title[Herramientas]
+
+### Herramientas
+En los 90/2k surgieron cientos de herramientas para facilitar el trabajo de RE, inspectores de ficheros, unpackers, desensambladores, debuggers, editores exadecimales, etc...
+
+Una lista podría ser: SoftIce, w32dasm, file insPEctor, SmartCheck, Pecode, WKTVBDE, Ida, DeDe, OllyDbg, ProcDump, VeoVeo, etc...
+
+---
+
+@title[r2intro]
+
+![](src/r2pirate.png)
