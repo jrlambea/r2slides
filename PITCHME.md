@@ -76,7 +76,7 @@ Pero cómo?
 
 Imaginemos un programa que pasándole un valor te devuelve el resultado de la suma con 16.
 
-![CPU](src/cpu.flv)
+![CPU](src/CPU.flv)
 
 ---
 
@@ -157,7 +157,7 @@ Cuando se ejecutan, se copian en memoria y empiezan en la primera instrucción d
 @title[Herramientas]
 
 ### Herramientas
-En los 90/2k surgieron cientos de herramientas para facilitar el trabajo de RE, inspectores de ficheros, unpackers, desensambladores, debuggers, editores exadecimales, etc...
+En los 90/2k surgieron cientos de herramientas para facilitar el trabajo de RE.
 
 Una lista podría ser: SoftIce, w32dasm, file insPEctor, SmartCheck, Pecode, WKTVBDE, Ida, DeDe, OllyDbg, ProcDump, VeoVeo, etc...
 
