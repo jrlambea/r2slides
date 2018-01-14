@@ -84,14 +84,14 @@ Imaginemos un programa que pasándole un valor te devuelve el resultado de la su
 
 ### <span class="gold">Registros</span>
 
-| Intel 16 | Intel x32 | Intel x64 | Descripción |
+|Intel16|Intelx32|Intelx64|Descripción|
 |---|---|---|---|
 |AX|EAX|RAX|Propósito general|
 |BX|EBX|RBX|Propósito general|
 |CX|ECX|RCX|Propósito general|
 |DX|EDX|RDX|Propósito general|
 |SP|ESP|RSP|Stack Pointer|
-|BP|EBP|RBP|Stack Base Pointer
+|BP|EBP|RBP|Base Pointer
 |IP|EIP|RIP|Instruction Pointer|
 
 ```
